@@ -1,0 +1,1 @@
+javascript:window.addEventListener("keyup",()=>{var e=document.getElementsByClassName("char current incorrect")[0];null!=e&&document.dispatchEvent(new KeyboardEvent("keydown",{key:e.innerHTML,keyCode:e.innerHTML.toUpperCase().charCodeAt(0)}))});
