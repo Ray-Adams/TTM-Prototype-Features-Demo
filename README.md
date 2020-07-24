@@ -2,7 +2,7 @@
 A collection of demo features for TheTypingMatch.com prototype.
 
 ## Features
-All demo features are compatible with each other, so you can use multiple at the same time.
+Most demo features are compatible with each other, so you can use multiple at the same time.
 
 ### Blind Mode
 Replaces (in)correct character highlighting with the serika-dark-theme yellow, to help improve raw speed.
@@ -25,6 +25,17 @@ javascript:window.addEventListener("keyup",()=>{var e=document.getElementsByClas
 
 #### Userscript:
 [autofix_errors.user.js](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo/raw/master/Autofix_Errors/autofix_errors.user.js)
+
+### Instant Death
+Instantly ends the article after a single incorrect key.
+
+#### Bookmarklet:
+```javascript
+javascript:window.addEventListener("keyup",()=>{var e=document.getElementsByClassName("char current incorrect")[0];null!=e&&(alert(`Correct key: ${e.innerHTML}`),window.location.reload())});
+```
+
+#### Userscript
+[instant_death.user.js](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo/raw/master/Instant_Death/instant_death.user.js)
 
 ## Installation
 There are two different ways you can install any of the demo features above:
