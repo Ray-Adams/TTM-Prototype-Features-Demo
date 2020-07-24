@@ -5,10 +5,10 @@ A collection of demo features for TheTypingMatch.com prototype.
 Most demo features are compatible with each other, so you can use multiple at the same time.
 
 ### Table of Contents
-* [Blind Mode](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo#blind-mode)
-* [Autofix Errors](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo#autofix-errors)
-* [Instant Death](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo#instant-death)
-* [Quick Tab](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo#quick-tab)
+* [Blind Mode](#blind-mode)
+* [Autofix Errors](#autofix-errors)
+* [Instant Death](#instant-death)
+* [Quick Tab](#quick-tab)
 
 ### Blind Mode
 Replaces (in)correct character highlighting with the serika-dark-theme yellow, to help improve raw speed.
