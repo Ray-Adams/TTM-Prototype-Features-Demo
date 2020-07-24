@@ -9,16 +9,14 @@
 // @grant        none
 // ==/UserScript==
 
-(function(){
-    window.addEventListener('keyup', () => {
-        var c = document.getElementsByClassName('char current incorrect')[0];
-        if (c != null) {
-            document.dispatchEvent(
-                 new KeyboardEvent("keydown", {
-                      key: c.innerHTML,
-                      keyCode: c.innerHTML.toUpperCase().charCodeAt(0)
-                 })
-            );
-        }
-    });
-})();
+window.addEventListener('keyup', () => {
+    var c = document.getElementsByClassName('char current incorrect')[0];
+    if (c != null) {
+        document.dispatchEvent(
+             new KeyboardEvent("keydown", {
+                  key: c.innerHTML,
+                  keyCode: c.innerHTML.toUpperCase().charCodeAt(0)
+             })
+        );
+    }
+});
