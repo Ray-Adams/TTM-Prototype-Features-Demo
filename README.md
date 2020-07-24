@@ -34,8 +34,19 @@ Instantly ends the article after a single incorrect key.
 javascript:window.addEventListener("keyup",()=>{var e=document.getElementsByClassName("char current incorrect")[0];null!=e&&(alert(`Correct key: ${e.innerHTML}`),window.location.reload())});
 ```
 
-#### Userscript
+#### Userscript:
 [instant_death.user.js](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo/raw/master/Instant_Death/instant_death.user.js)
+
+### Quick Tab
+Quickly refresh the page by pressing the "tab" key.
+
+#### Bookmarklet:
+```javascript
+javascript:window.addEventListener("keydown",()=>{9==event.keyCode&&window.location.reload()});
+```
+
+#### Userscript:
+[quick_tab.user.js](https://github.com/Ray-Adams/TTM-Prototype-Features-Demo/raw/master/Quick_Tab/quick_tab.user.js)
 
 ## Installation
 There are two different ways you can install any of the demo features above:
