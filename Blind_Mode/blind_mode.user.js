@@ -1,20 +1,20 @@
 // ==UserScript==
 // @name         Blind Mode
 // @namespace    https://github.com/Ray-Adams
-// @version      0.0.2
-// @description  Replaces (in)correct character highlighting with the serika-dark-theme yellow, to help improve raw speed.
+// @version      0.0.3
+// @description  Replaces correct and incorrect character highlighting with the serika-dark-theme yellow.
 // @author       Ray Adams
-// @match        http://thetypingmatch.com/test
+// @match        http://thetypingmatch.com
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
-(function(){
-    var a = document.styleSheets[16], b = '{color:#e2b714; transition:0.3s;}';
+(() => {
+    let sheet = document.styleSheets[8];
 
-    a.deleteRule(10);
-    a.deleteRule(9);
+    sheet.deleteRule(13);
+    sheet.deleteRule(12);
 
-    a.insertRule('.correct' + b, 9);
-    a.insertRule('.incorrect' + b, 10);
+    sheet.insertRule('.correct {color:#e2b714 !important; transition:0.3s;}', 12);
+    sheet.insertRule('.incorrect {color:#e2b714 !important; transition:0.3s;}', 13);
 })();
